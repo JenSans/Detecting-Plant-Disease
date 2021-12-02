@@ -12,7 +12,9 @@ This project analyses over 50,000 plant images of healthy and diseased crops. Pl
 These crops include: 
 
 Apples 
+
 Blueberries 
+
 Cherries 
 Corn
 Grapes 
