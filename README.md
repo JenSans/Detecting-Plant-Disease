@@ -3,7 +3,7 @@ Image classification project for detecting diseases in plants!
 
 **Overview**
 
-In recent decades, farmers have experienced devastating crop loss as a result of the changes in the environment; global warming, weather pattern changes, pest infestations, etc. According to PlantVillage [source](http://arxiv.org/abs/1511.08060), we need to increase food production globally by 70% to feed an expected population of 9 billion people. This project aims to predict whether a crop is healthy or not and aid in PlantVillage's mobile disease diagnostics system! Early detection of disease is key for preventing the loss of a crop. It is especially import to salvage crops in developing communities. 
+In recent decades, farmers have experienced devastating crop loss as a result of the changes in the environment; global warming, weather pattern changes, pest infestations, etc. According to PlantVillage [source](http://arxiv.org/abs/1511.08060), we need to increase food production globally by 70% to feed an expected population of 9 billion people. This project aims to predict whether a crop is healthy or not and aid in PlantVillage's mobile disease diagnostics system! Early detection of disease is key for preventing the loss of a crop. It is especially important to salvage crops in developing communities. 
 
 **Business and Data Understanding**
 
