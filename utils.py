@@ -143,11 +143,11 @@ def create_df(col_sizes, col_roots, gray_sizes, gray_roots, seg_sizes, seg_roots
     return pd.concat([col_image_df, gray_image_df, seg_image_df], axis=0)
 
 
-def plot_results(estimator): 
-    acc = estimator.history['accuracy']
-    val_acc = estimator.history['val_accuracy']
-    loss = estimator.history['loss']
-    val_loss = estimator.history['val_loss']
+def plot_results(estimator_, model_): 
+    acc = estimator_.history['accuracy']
+    val_acc = estimator_.history['val_accuracy']
+    loss = estimator_.history['loss']
+    val_loss = estimator_.history['val_loss']
     epochs = range(1, len(acc) + 1)
 
     # Train and validation accuracy
@@ -168,7 +168,7 @@ def plot_results(estimator):
     """Evaluating model accuracy by using the `evaluate` method"""
 
     print("[INFO] Calculating model accuracy")
-    scores = model.evaluate(X_test, y_test)
+    scores = model_.evaluate(X_test, y_test)
     print(f"Test Accuracy: {round(scores[1]*100)}%")
 
 def predict_disease(image_path, estimator):
