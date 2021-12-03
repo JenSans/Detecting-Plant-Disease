@@ -46,7 +46,7 @@ The fourth model
 
 Parameter Tuning: 
 
-Adjustments were made to prevent overfitting using Dropout. Through the modeling process, more layers are added as well as epochs and steps per epoch to check on the slow improvement on the model's performnce with accuracy. 
+Adjustments were made to prevent overfitting using Dropout. Through the modeling process, more layers are added as well as epochs and steps per epoch to check on the slow improvement on the model's performnce with accuracy. Throughout the modeling process, I gradually add convolutional layers to the model to see it's affect on the model's performance. 
 
 **Conclusion**
 
