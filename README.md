@@ -9,22 +9,7 @@ In recent decades, farmers have experienced devastating crop loss as a result of
 
 This project analyses over 50,000 plant images of healthy and diseased crops. PlantVillage will use this model to continue to improve on their expert level crop disease diagnostics. 
 
-These crops include: 
-
-1. Apples 
-2. Blueberries 
-3. Cherries 
-4. Corn
-5. Grapes 
-6. Oranges 
-7. Peaches
-8. Bell Peppers 
-9. Potatoes
-10. Raspberries 
-11. Soybeans 
-12. Squash 
-13. Strawberries 
-14. Tomatoes
+These crops include Apples, Blueberries, Cherries, Corn, Grapes, Oranges, Peaches, Bell Peppers, Potatoes, Raspberries, Soybeans, Squash, Strawberries, and Tomatoes. 
 
 In exploring the data, it was found that the images have an imbalance with about 73% of the images being diseased plants and 27% being healthy plants. The diseases included in this dataset are scabs, black rot, rust, powdery mildew, gray leaf spots, Northern Leaf Blight, Black Measles, Isariopsis Leaf Spot, citrus greening, bacterial spots, early blight, late blight, leaf scorch, leaf mold, target spots, yellow leaf curl virus, and tomato mosaic virus. 
 
