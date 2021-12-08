@@ -1,9 +1,7 @@
 # Detecting-Plant-Disease
 Image classification project for detecting diseases in plants!
 
-[DiseasedLeafImages](images/Screen Shot 2021-12-08 at 9.24.00 AM.png)
-[Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.06 AM.png)
-[Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.11 AM.png)
+<img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.11%20AM.png" width="250" height="250"> <img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.06%20AM.png" width="250" height="250"> <img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.00%20AM.png" width="250" height="250">
 
 ## Overview
 
