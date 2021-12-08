@@ -40,6 +40,7 @@ Future Work:
 In future work, I'd like to include more images in the dataset that are common in other parts of the world. The fruits and vegetables in this dataset are very common in North America, and I'd like to include images representing the vegetation that is common to the cultures in other countries other than North America. I'd also want to shoot for a more balanced dataset that contains more healthy plant images to help with that imbalance in healthy vs. diseased images. 
 
 ## Presentation Link:
+[Presentation](https://www.canva.com/design/DAExxsiS2ko/jNUSPPhrECkXyaLIdymbYw/view?utm_content=DAExxsiS2ko&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Repository Navigation
 
