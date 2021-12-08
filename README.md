@@ -48,7 +48,8 @@ In future work, I'd like to include more images in the dataset that are common i
 
 ```
 ├── README.md                                   <- The top-level README for reviewers of this project. 
-├── notebook.ipynb                              <- Final Notebook
+├── notebook.ipynb                              <- Final Notebook.
 ├── presentation.pdf                            <- PDF of the Canva presentation. 
-└── utils.py                                    <- Helpful functions to use in final notebook
+├── images                                      <- Images used for README.
+└── utils.py                                    <- Helpful functions to use in final notebook.
 ```
