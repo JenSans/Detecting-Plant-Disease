@@ -15,7 +15,7 @@ In exploring the data, it was found that the images have an imbalance with about
 
 Almost all of the images have a Width of 256 pixels and Height of 256 pixels. There are 3 different types of images represented in this data including color images, grayscale images, and segmented images. This gives the model many different options to train on. 
 
-## Modeling**
+## Modeling
 
 Baseline Model: 
 
