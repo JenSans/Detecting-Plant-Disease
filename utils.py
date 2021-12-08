@@ -1,3 +1,8 @@
+from tensorflow.keras.models import Sequential, Model
+from tensorflow.keras.layers import Conv2D,Activation,LeakyReLU,BatchNormalization,MaxPooling2D,Flatten,Dense,Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras import backend as K
+import tensorflow as tf
 
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import ImageDataGenerator,img_to_array
@@ -10,32 +15,63 @@ import numpy as np
 import pickle
 import cv2
 import os
-from keras import backend as K
+from os import listdir
+from sklearn.preprocessing import LabelBinarizer,MultiLabelBinarizer
+from sklearn.model_selection import train_test_split
+import numpy as np
+import pickle
+import cv2
+from os import listdir
+from sklearn.preprocessing import LabelBinarizer
+from keras.models import Sequential
 
+from keras.layers.convolutional import Conv2D
+from keras.layers.convolutional import MaxPooling2D
+from keras.layers.core import Activation, Flatten, Dropout, Dense
+from keras.layers import Dense, Dropout, Conv2D, MaxPooling2D, Flatten, Input, LSTM, AveragePooling2D
+from keras import backend as K
+from keras.preprocessing.image import ImageDataGenerator
 
 from keras.preprocessing import image
 from keras.preprocessing.image import img_to_array
+from sklearn.preprocessing import MultiLabelBinarizer
+from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
+from tensorflow.keras.callbacks import EarlyStopping
+from timeit import default_timer as timer
 from pathlib import Path
 import imagesize
 from PIL import Image
 
 
-def get_roots(root_, root2_, root3_): 
+def convert_image_to_array(image_dir):
+    try:
+        image = cv2.imread(image_dir)
+        if image is not None :
+            image = cv2.resize(image, default_image_size)   
+            return img_to_array(image)
+        else :
+            return np.array([])
+    except Exception as e:
+        print(f"Error : {e}")
+        return None
+
+
+def get_roots(root_, root2_, root3_, folder_list): 
     # Get the color root 
     all_color = []
-    for x in plant_disease_folder_list:     
-            all_color.append(f'{root}{x}/')
+    for x in folder_list:     
+            all_color.append(f'{root_}{x}/')
         
     # Get the grayscale root
     all_gray = []
-    for y in plant_disease_folder_list:     
-            all_gray.append(f'{root2}{y}/')
+    for y in folder_list:     
+            all_gray.append(f'{root2_}{y}/')
             
     # Get the segmented root
     all_seg = []
-    for z in plant_disease_folder_list:     
-            all_seg.append(f'{root3}{z}/')
+    for z in folder_list:     
+            all_seg.append(f'{root3_}{z}/')
             
     
     return [all_color, all_gray, all_seg]
@@ -143,7 +179,7 @@ def create_df(col_sizes, col_roots, gray_sizes, gray_roots, seg_sizes, seg_roots
     return pd.concat([col_image_df, gray_image_df, seg_image_df], axis=0)
 
 
-def plot_results(estimator_, model_): 
+def plot_results(estimator_, model_, X, Y): 
     acc = estimator_.history['accuracy']
     val_acc = estimator_.history['val_accuracy']
     loss = estimator_.history['loss']
@@ -168,12 +204,12 @@ def plot_results(estimator_, model_):
     """Evaluating model accuracy by using the `evaluate` method"""
 
     print("[INFO] Calculating model accuracy")
-    scores = model_.evaluate(X_test, y_test)
+    scores = model_.evaluate(X, Y)
     print(f"Test Accuracy: {round(scores[1]*100)}%")
 
 def predict_disease(image_path, estimator):
     image_array = convert_image_to_array(image_path)
-    np_image = np.array(image_array, dtype=np.float16) / 225.0
+    np_image = np.array(image_array, dtype=np.float16) / 255.0
     np_image = np.expand_dims(np_image,0)
     plt.imshow(plt.imread(image_path))
     result = estimator.predict_classes(np_image)
