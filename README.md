@@ -26,9 +26,9 @@ The baseline model is CNN that adds one Convolutional layer and augments the ima
 The final model takes into account what was learned from the previous 3 models before it. More convolutional layers are added, the images were augmented with a vertical flip, and a slight increase in shear. 
 
 ## Model Results
-The baseline model's accuracy came out to 19%, which is not an ideal accuracy by any means, but it is a starting point. 
-The second model increases to about 40% accuracy, a drastic improvement from the baseline. 
-The third model increases again to 72% accuracy! Now we're getting somewhere. 
+The baseline model's accuracy came out to 22%, which is not an ideal accuracy by any means, but it is a starting point. 
+The second model increases to about 44% accuracy, a drastic improvement from the baseline. 
+The third model increases again to 74% accuracy! Now we're getting somewhere. 
 The fourth model 
 
 Parameter Tuning: 
