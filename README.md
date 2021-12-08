@@ -1,5 +1,5 @@
 # Detecting-Plant-Disease
-Image classification project for detecting diseases in plants!
+Image classification project for detecting diseases in plants! To view all the visuals for this project, please visit my nbviewer notebook [here](https://nbviewer.org/github/JenSans/Detecting-Plant-Disease/blob/main/notebook.ipynb). 
 
 <img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.11%20AM.png" width="250" height="250"> <img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.06%20AM.png" width="250" height="250"> <img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.00%20AM.png" width="250" height="250">
 
@@ -26,14 +26,9 @@ The baseline model is CNN that adds one Convolutional layer and augments the ima
 The final model takes into account what was learned from the previous 3 models before it. More convolutional layers are added, the images were augmented with a vertical flip, and a slight increase in shear. 
 
 ## Results
-The baseline model's accuracy came out to 22%, which is not an ideal accuracy by any means, but it is a starting point. 
-The second model increases to about 44% accuracy, a drastic improvement from the baseline. 
-The third model increases again to 74% accuracy! Now we're getting somewhere. 
-The fourth model 
+The best performing model was the third model with an accuracy of 74%. When testing out the model's predictions on images it hadn't trained on, it was able to predict the disease or health of the plant accurate 74% of the time! 
 
-Parameter Tuning: 
-
-Adjustments were made to prevent overfitting using Dropout. Through the modeling process, more layers are added as well as epochs and steps per epoch to check on the slow improvement on the model's performnce with accuracy. Throughout the modeling process, I gradually add convolutional layers to the model to see it's affect on the model's performance. 
+Adjustments were made to prevent overfitting using Dropout. Through the modeling process, more layers were added as well as epochs and steps per epoch to check on the slow improvement on the model's performance with accuracy. Throughout the modeling process, I gradually add convolutional layers to the model to see its effect on the model's performance. 
 
 ## Conclusion
 
