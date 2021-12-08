@@ -1,6 +1,8 @@
 # Detecting-Plant-Disease
 Image classification project for detecting diseases in plants!
 
+<img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.11%20AM.png" width="250" height="250"> <img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.06%20AM.png" width="250" height="250"> <img src="https://github.com/JenSans/Detecting-Plant-Disease/blob/main/images/Screen%20Shot%202021-12-08%20at%209.24.00%20AM.png" width="250" height="250">
+
 ## Overview
 
 In recent decades, farmers have experienced devastating crop loss as a result of the changes in the environment; global warming, weather pattern changes, pest infestations, etc. According to [PlantVillage](http://arxiv.org/abs/1511.08060), we need to increase food production globally by 70% to feed an expected population of 9 billion people. This project aims to predict whether a crop is healthy or not and aid in PlantVillage's mobile disease diagnostics system! Early detection of disease is key for preventing the loss of a crop. It is especially important to salvage crops in developing communities. 
