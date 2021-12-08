@@ -25,7 +25,7 @@ The baseline model is CNN that adds one Convolutional layer and augments the ima
 
 The final model takes into account what was learned from the previous 3 models before it. More convolutional layers are added, the images were augmented with a vertical flip, and a slight increase in shear. 
 
-## Model Results
+## Results
 The baseline model's accuracy came out to 22%, which is not an ideal accuracy by any means, but it is a starting point. 
 The second model increases to about 44% accuracy, a drastic improvement from the baseline. 
 The third model increases again to 74% accuracy! Now we're getting somewhere. 
@@ -37,7 +37,7 @@ Adjustments were made to prevent overfitting using Dropout. Through the modeling
 
 ## Conclusion
 
-Future Work: 
+For next steps, I would recommend using this model as a tracking system for disease on a farm. Using technology like this may help prevent significant crop loss in the future and keep small farms vital in their communities. This can be especially important in communities that rely heavily on their small farms. 
 
 In future work, I'd like to include more images in the dataset that are common in other parts of the world. The fruits and vegetables in this dataset are very common in North America, and I'd like to include images representing the vegetation that is common to the cultures in other countries other than North America. I'd also want to shoot for a more balanced dataset that contains more healthy plant images to help with that imbalance in healthy vs. diseased images. 
 
