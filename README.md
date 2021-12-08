@@ -1,9 +1,9 @@
 # Detecting-Plant-Disease
 Image classification project for detecting diseases in plants!
 
-![Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.00 AM.png)
-![Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.06 AM.png)
-![Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.11 AM.png)
+[Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.00 AM.png)
+[Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.06 AM.png)
+[Diseased Leaf Images](images/Screen Shot 2021-12-08 at 9.24.11 AM.png)
 
 ## Overview
 
