@@ -46,6 +46,6 @@ In future work, I'd like to include more images in the dataset that are common i
 ├── notebook.ipynb                              <- Final Notebook.
 ├── presentation.pdf                            <- PDF of the Canva presentation. 
 ├── images                                      <- Images used for README.
-├── environment                                 <- Environment requirements to run this notebook. 
+├── environment.yml                             <- Environment requirements to run this notebook. 
 └── utils.py                                    <- Helpful functions to use in final notebook.
 ```
