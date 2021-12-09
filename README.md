@@ -19,7 +19,7 @@ Almost all of the images have a Width of 256 pixels and Height of 256 pixels. Th
 
 ## Modeling
 
-The baseline model is CNN that adds one Convolutional layer and augments the images with a horizontal flip. The accuracy comes out low at about 19%, leaving a lot of room for improvement in the modeling process. Due to limited computing power, I wanted to check on how a model would perform by keeping the epochs and steps per epoch on the lower side at 10 epochs and 20 steps per epoch. When visualizing the model's epochs and validation accuracy, a gradual improvement does show, so adding more epochs and steps per epoch may drastically improve this model's accuracy. 
+The baseline model is CNN that adds one Convolutional layer and augments the images with a horizontal flip. The accuracy comes out low at about 22%, leaving a lot of room for improvement in the modeling process. Due to limited computing power, I wanted to check on how a model would perform by keeping the epochs and steps per epoch on the lower side at 10 epochs and 20 steps per epoch. When visualizing the model's epochs and validation accuracy, a gradual improvement does show, so adding more epochs and steps per epoch may drastically improve this model's accuracy. 
 
 The final model takes into account what was learned from the previous 3 models before it. More convolutional layers are added, the images were augmented with a vertical flip, and a slight increase in shear. 
 
